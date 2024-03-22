@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <style>
+    h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    }
+    img {
+  margin-right: 20px;
+  
+    }
+body {
+    background-color: black;
+}
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.aligncenter {
+    text-align: center;
+}
+.button15 {
+  display: inline-block;
+  font-family: arial,sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: rgb(68,68,68);
+  text-decoration: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+}
+.button15:hover {
+  color: rgb(24,24,24);
+  border: 1px solid rgb(198,198,198);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.button15:active {
+  color: rgb(51,51,51);
+  border: 1px solid rgb(204,204,204);
+  background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+.logo {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.about, .news, .projects {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.news form {
+    margin-top: 10px;
+}
+
+.news input, .news button {
+    padding: 5px 10px;
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    width: 200px;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+
+}
+
+.social li {
+    display: inline-block;
+    text-align: center;
+}
+.button4 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  text-decoration: none;
+  padding: .3em 1em;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: #0c9c0d linear-gradient(#82d18d, #0c9c0d);
+  box-shadow: inset #72de26 0 -1px 1px, inset 0 1px 1px #98ff98, #3caa3c 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
+.button4:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  cursor: pointer;
+  text-align: center;
+}
+.button4:active {
+  text-align: center;
+  top: 1px;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+  box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+@-webkit-keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+@keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+
+
+
+  </style>
+</head>
+<body>
+  
+    <button class="button15" id="myButton" onclick="Back()">Назад</button>
+    <script>
+    function Back() {
+        window.location.href = 'mob.index.html';
+    }
+</script>
+
+    
+        <h1>Мы - разработчики и владельцы проекта:</h1>
+        <div class="aligncenter">
+            
+    <img src="егор.jpeg" width="242" height="497" alt="Егор">      
+    <img src="артем.jpeg" width="242" height="497" alt="Артем">
+    
+
+</div>
+  <button class="button4" id="myButton" onclick="GoToDONAT()">Поддержать проект</button>
+  <script>
+    function GoToDONAT() {
+        window.location.href = 'donat.html';
+    }
+    </script>
+
+  
+    
+    
+    
+    
+    
+    
+
+
+</body>
+</html>

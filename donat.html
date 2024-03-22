@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Донатики 🍩</title>
+    <style>
+        html,
+body {
+  background: #000000; /* Fallback */
+  animation: color 60s infinite linear;
+  text-align: center;
+  padding: 2em;
+  
+}
+h1 {
+    color:aliceblue;
+    font-family: Arial, sans-serif;
+    
+}
+button {
+    margin: 0 auto;
+    display: block;
+    
+    transform: none;
+    margin-bottom: 30px;
+}
+p{
+  font-family: none;
+  font-weight: bold;
+    
+}
+.glow-on-hover {
+    width: 320px;
+    height: 80px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    
+    font-size: 16px;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(34, 33, 33);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+    </style>
+</head>
+<body>
+    
+    
+    <h1>Выберите способ поддержать проект:</h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+<div class="block-display">
+  
+  </br>
+  <button class="glow-on-hover" id='DirectLink_button' onclick="gotoDirectLink()">Перевод по прямой ссылке </button>
+  <script>
+    function gotoDirectLink() {
+        window.location.href = 'https://www.tinkoff.ru/rm/kobzev.egor13/TgtuS26177';
+    }
+</script>
+  <button class="glow-on-hover" id='tinkoff_button' onclick="gototinkoff()">Перевод на Тинькофф</button>
+  <script>
+    function gototinkoff() {
+        window.location.href = 'https://one-qr.ru/v?rsPpmjIo8kwq6cUe';
+    }
+</script>
+  <button class="glow-on-hover" id='sber_button' onclick="gotosber()">Перевод на Сбербанк</button>
+  <script>
+    function gotosber() {
+        window.location.href = 'https://one-qr.ru/v?q8LpuurYyGJhqQsI';
+    }
+</script>
+</div>
+
+</body>
+</html>
