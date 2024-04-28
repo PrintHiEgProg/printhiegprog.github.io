@@ -600,8 +600,12 @@ mobile-header {
         <img src="code-int.png" alt="фото синтаксиса" style="width:35%; height:auto; text-align: center;">
         
 <br><br>
-        <button class="gradient-btn download-size" href="https://github.com/PrintHiEgProg/prog-lang/archive/refs/heads/main.zip">Скачать</button>
-
+        <button class="gradient-btn download-size" onclick="GoToDownload()">Скачать</button>
+<script>
+	function GoToDownload() {
+		window.location.href = 'https://github.com/PrintHiEgProg/prog-lang/archive/refs/heads/main.zip';
+	}
+</script>
         <br/><br/><br/><br/><br/><br/>
         <h2 class="first-display" align="right" style="padding-right: 5% ;">У нас есть всё что вам нужно:</h2>
         <img src="code.png" alt="фото возможностей языка" align="right" style="width:35%; height:auto; padding-right: 5% ;"><br>
