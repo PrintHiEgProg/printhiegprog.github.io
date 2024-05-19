@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles/style-index.css">
+</head>
+<body>
+    <header>
+        <a class="logo-href"><img class="logo" src="images/logo-black.png" alt="logo"></a>
+        
+        <div class="menu">
+            
+        <ul class="menu-ul">
+            <li class="menu-item"><a class="menu-item-text" href="">Characters</a></li>
+            <li class="menu-item"><a class="menu-item-text" href="">Location</a></li>
+            <li class="menu-item"><a class="menu-item-text" href="">Episodes</a></li>
+        </ul>
+        </div>
+    </header>
+
+    <div class="header-mobile">
+      <a class="logo-href"><img class="logo-mobile" src="images/logo-black.png" alt="logo"></a>
+        <input type="checkbox" id="nav-toggle" hidden>
+    
+    <nav class="nav">
+        
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        
+        <ul id="swim-window">
+            <li><a class="color-black" style="text-align: center;" href="">Characters</a>
+            <li><a class="color-black" style="text-align: center;" href="">Location</a>
+            <li><a class="color-black" style="text-align: center;" href="">Episodes</a>
+            
+             
+        </ul>
+    </nav>
+    
+    </div>
+
+    <main>
+        <div class="main-image">
+            <img class="main-image-item" src="images/main-photo.png" alt="main-photo"> 
+        </div>
+        
+            
+            <div class="main-finder">
+                <input class="main-finder-itemSearch" type="search" placeholder="Filter by name...">
+            <select class="main-finder-itemSort">
+                <option value="first">Species</option>
+            </select>
+            <select class="main-finder-itemSort">
+                <option value="first">Gender</option>
+            </select>
+            <select class="main-finder-itemSort">
+                <option value="first">Status</option>
+            </select>
+            
+            
+        </div>
+        <div class="btn-advanced-filters">
+          <button class="btn-advanced-filters-item" onclick="GoToFilters()">ADVANCED FILTERS</button>
+        </div>
+        <div id="filtersPopup" class="popup">
+  <div class="popup-content"><span class="close" style="top: -100%;" onclick="CloseFilters()">&times;</span>
+    <h2>Filters</h2>
+    <div class="main-finder-mobile">
+      <select class="main-finder-itemSort-mobile">
+        <option value="first">Species</option>
+      </select><br><br>
+      <select class="main-finder-itemSort-mobile">
+        <option value="first">Gender</option>
+      </select><br><br>
+      <select class="main-finder-itemSort-mobile">
+        <option value="first">Status</option>
+      </select>
+    </div>
+    <div class="btn-apply">
+      <button class="btn-apply-item" onclick="CloseFilters()">APPLY</button>
+    </div>
+  </div>
+</div>
+
+<script>
+function GoToFilters() {
+  var popup = document.getElementById('filtersPopup');
+  popup.style.display = 'block';
+}
+
+function CloseFilters() {
+  var popup = document.getElementById('filtersPopup');
+  popup.style.display = 'none';
+}
+
+
+</script>
+        <div class="catalog">
+            <div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="/images/rick.jpeg"
+        alt="Rick Sanchez"
+      />
+    </a>
+   
+    
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Rick Sanchez
+    </a>
+    <a href="#" class="card__type">
+      Human
+    </a>
+  </div>
+</div>
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="/images/rick.jpeg"
+        alt="Rick Sanchez"
+      />
+    </a>
+   
+    
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Rick Sanchez
+    </a>
+    <a href="#" class="card__type">
+      Human
+    </a>
+  </div>
+</div>
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="/images/rick.jpeg"
+        alt="Rick Sanchez"
+      />
+    </a>
+   
+    
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Rick Sanchez
+    </a>
+    <a href="#" class="card__type">
+      Human
+    </a>
+  </div>
+</div>
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="/images/rick.jpeg"
+        alt="Rick Sanchez"
+      />
+    </a>
+   
+    
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Rick Sanchez
+    </a>
+    <a href="#" class="card__type">
+      Human
+    </a>
+  </div>
+</div>
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="/images/rick.jpeg"
+        alt="Rick Sanchez"
+      />
+    </a>
+   
+    
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Rick Sanchez
+    </a>
+    <a href="#" class="card__type">
+      Human
+    </a>
+  </div>
+</div>
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="/images/rick.jpeg"
+        alt="Rick Sanchez"
+      />
+    </a>
+   
+    
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Rick Sanchez
+    </a>
+    <a href="#" class="card__type">
+      Human
+    </a>
+  </div>
+</div>
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="/images/rick.jpeg"
+        alt="Rick Sanchez"
+      />
+    </a>
+   
+    
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Rick Sanchez
+    </a>
+    <a href="#" class="card__type">
+      Human
+    </a>
+  </div>
+</div>
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="/images/rick.jpeg"
+        alt="Rick Sanchez"
+      />
+    </a>
+   
+    
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Rick Sanchez
+    </a>
+    <a href="#" class="card__type">
+      Human
+    </a>
+  </div>
+</div>
+        </div>
+        <div class="btn-load-more">
+            <button class="btn-load-more-item">LOAD MORE</button>
+        </div>
+        <footer>
+            <h4 class="footer-text">Make with ❤️ for the MobProgramming team</h4>
+        </footer>
+    </main>
+
+    
+</body>
+</html>
