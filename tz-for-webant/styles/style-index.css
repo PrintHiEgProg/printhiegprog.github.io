@@ -2,17 +2,7 @@ body{
     background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header {
-    padding-top: -100%;
-    width: 100%;
-    height: 60px;
-    color: #e60303;
-    position: fixed;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-    
-     
-  }
+
 
 
 
@@ -166,6 +156,7 @@ footer {
 
 
 
+
 @media  screen and (min-width: 525px) {
   .main-image-item {
     padding-top: 60px;
@@ -177,7 +168,12 @@ footer {
   }
 
   header {
-    background-color: #ffffff;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    position: absolute;
   }
   
   .menu{
