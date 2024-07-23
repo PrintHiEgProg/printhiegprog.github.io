@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>амонгасик 😍🥰</title></head>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #canvas {width: 100vw;height:100vh;}
+    </style>
+    <body>
+        <canvas id='canvas'></canvas>
+    </body>
+        <script>
+            var Aspose3D = {
+                locateFile : function(path, prefix) {
+                    return 'https://products.aspose.app/3d/assets/js/' + path;
+                }
+            };
+        </script>
+        <script src='https://products.aspose.app/3d/assets/js/aspose.3d-2.1.js'></script>
+        <script>
+
+                aspose3d({
+                    canvas : 'canvas',
+                    movement : 'orbital',
+                    centerModel : true,
+                    features : ['grid', 'menu', 'summary', 'orientationBox', ],
+                    camera:
+                    {
+                        far: 1000,
+                        near: 1,
+                        up: 'y',
+                        lookAt : [0, 0, 0],
+                        position : [10, 10, 10],
+                        fov : 45
+                    },
+                    url: 'scene.usdz'
+                });
+        </script>
+</html>
